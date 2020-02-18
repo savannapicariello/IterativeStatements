@@ -16,26 +16,25 @@ namespace IterativeStatements
                 if (n % 2 == 0)
                 {
 
-                    for (int i = 0; i < n; i++)
+                    for (int i = 0; i < n+1; i++)
                     {
-                        Console.WriteLine("You entered an even number." + i.ToString());
+                        Console.WriteLine(i.ToString()+"." + "You entered an even number.");
 
                     }
 
                 }
                 else
                 {
-                    for (int i = 0; i < n; i++)
+                    for (int i = 0; i < n-1; i++)
                     {
-                        Console.WriteLine("You entered an odd number." + i.ToString());
+                        Console.WriteLine(i.ToString()+ "." + "You entered an odd number.");
 
                     }
                 }
             }
             catch
             {
-                Console.WriteLine("Press any key to exit the program...");
-                Console.ReadKey(true);
+               
             }
         }
     }
